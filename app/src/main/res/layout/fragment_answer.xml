@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".fragment.AnswerFragment">
+
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年份："
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回答："
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/index"
+        app:layout_constraintTop_toBottomOf="@+id/index"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker0"
+        android:layout_width="50sp"
+        android:layout_height="140sp"
+        android:layout_marginEnd="108dp"
+        android:theme="@style/NumberPickerText"
+        app:layout_constraintBottom_toBottomOf="@+id/index"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/index"
+        app:layout_constraintTop_toTopOf="@+id/index" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="50sp"
+        android:layout_height="140sp"
+        android:layout_marginEnd="108dp"
+        android:theme="@style/NumberPickerText"
+        app:layout_constraintBottom_toBottomOf="@+id/year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/year"
+        app:layout_constraintTop_toTopOf="@+id/year"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="135sp"
+        android:layout_height="60sp"
+        android:gravity="center"
+        android:hint="请输入英文大写"
+        android:inputType="textCapCharacters"
+        app:layout_constraintBottom_toBottomOf="@+id/answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/answer"
+        app:layout_constraintTop_toTopOf="@+id/answer"
+        app:layout_constraintVertical_bias="0.187" />
+
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="章节："
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/year"
+        app:layout_constraintTop_toBottomOf="@+id/year"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/botton_color_selector"
+        android:text="提交"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
